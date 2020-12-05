@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Feature from "../../components/featured";
 import FormField from "../../components/utils/form/formField";
+import arrow from "../../assets/images/arrow.png";
+
 export default function ContactUs() {
   const [formData, setFormData] = useState(() => {
     const formData = {
@@ -66,7 +68,7 @@ export default function ContactUs() {
               <span style={{ fontSize: "25px", marginRight: "10px" }}>
                 View map
               </span>{" "}
-              <img width="30px" src="/assets/arrow.png" alt=""></img>
+              <img width="30px" src={arrow} alt=""></img>
             </div>
             <div className="contact-us__phone">Phone: +44 345 678 903</div>
             <div className="contact-us__email">
