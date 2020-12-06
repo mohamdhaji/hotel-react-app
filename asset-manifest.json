@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hotel-react-app/static/css/main.00a7c4eb.chunk.css",
-    "main.js": "/hotel-react-app/static/js/main.8b9fcdb4.chunk.js",
-    "main.js.map": "/hotel-react-app/static/js/main.8b9fcdb4.chunk.js.map",
+    "main.css": "/hotel-react-app/static/css/main.6c3f8b6b.chunk.css",
+    "main.js": "/hotel-react-app/static/js/main.c09b64a4.chunk.js",
+    "main.js.map": "/hotel-react-app/static/js/main.c09b64a4.chunk.js.map",
     "runtime-main.js": "/hotel-react-app/static/js/runtime-main.f1d1408f.js",
     "runtime-main.js.map": "/hotel-react-app/static/js/runtime-main.f1d1408f.js.map",
     "static/js/2.8b0b234a.chunk.js": "/hotel-react-app/static/js/2.8b0b234a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.62594212.chunk.js": "/hotel-react-app/static/js/3.62594212.chunk.js",
     "static/js/3.62594212.chunk.js.map": "/hotel-react-app/static/js/3.62594212.chunk.js.map",
     "index.html": "/hotel-react-app/index.html",
-    "static/css/main.00a7c4eb.chunk.css.map": "/hotel-react-app/static/css/main.00a7c4eb.chunk.css.map",
+    "static/css/main.6c3f8b6b.chunk.css.map": "/hotel-react-app/static/css/main.6c3f8b6b.chunk.css.map",
     "static/js/2.8b0b234a.chunk.js.LICENSE.txt": "/hotel-react-app/static/js/2.8b0b234a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/hotel-react-app/static/media/AGaramondPro-Regular.9b0413a8.otf",
     "static/media/Facilities.ab7509c6.png": "/hotel-react-app/static/media/Facilities.ab7509c6.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.f1d1408f.js",
     "static/js/2.8b0b234a.chunk.js",
-    "static/css/main.00a7c4eb.chunk.css",
-    "static/js/main.8b9fcdb4.chunk.js"
+    "static/css/main.6c3f8b6b.chunk.css",
+    "static/js/main.c09b64a4.chunk.js"
   ]
 }
