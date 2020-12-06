@@ -29,7 +29,7 @@ export default function Facilities() {
     dispatch({ type: "loading" });
     unsplash
       .get("/search/photos", {
-        params: { query: "hotel", per_page: "7" },
+        params: { query: "hotel", per_page: "6" },
       })
       .then((response) => {
         dispatch({ type: "success", payload: response.data.results });

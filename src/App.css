@@ -542,24 +542,31 @@
 .room-card {
   margin-bottom: 90px;
   position: relative;
-  max-height: 900px;
+  max-height: 1100px;
   width: 100%;
   border: 2px solid #14274a;
   border-radius: 6px;
 }
 .room-card > img {
-  max-height: 900px;
-  min-height: 900px;
-  height: 900px;
+  max-height: 750px;
+  min-height: 750px;
+  height: 750px;
   width: 100%;
+}
+.slider{
+  max-height: 750px;
+  min-height: 750px;
+  height: 750px;
+  width: 100%;
+  text-align: center;
 }
 
 .room-card__image-name {
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   bottom: 160px;
   left: 0;
-  right: 0;
+  right: 0; */
   text-align: center;
   background: #14274a;
   font-size: 46px;
@@ -570,14 +577,15 @@
   justify-content: center;
   font-weight: 700;
   color: white;
+  margin-top: -4px;
 }
 
 .room-card__footer {
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   text-align: center;
   background: white;
   height: 160px;

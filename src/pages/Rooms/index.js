@@ -31,10 +31,20 @@ export default function Rooms() {
     dispatch({ type: "loading" });
     unsplash
       .get("/search/photos", {
-        params: { query: "luxury rooms ", per_page: "7" },
+        params: { query: "luxury rooms ", per_page: "3" },
       })
       .then((response) => {
-        dispatch({ type: "success", payload: response.data.results });
+        const images=response.data.results;
+        // for slider later on
+        // for(let i=0; i<res.length; i++){
+        //   if( images[Math.floor(i%3)]){
+        //     images[Math.floor(i%3)].push(res[i])
+        //   }else {
+        //     images[Math.floor(i%3)]=[res[i]]
+        //   }
+
+        // }
+        dispatch({ type: "success", payload: images });
       })
       .catch((error) => {
         dispatch({ type: "error" });
@@ -71,8 +81,8 @@ export default function Rooms() {
       </div>
       <section className="rooms-content">
       {state.images.length > 0 ? (
-          state.images.map((image) => (
-            <RoomCard image={image} key={image.id} />
+          state.images.map((image,i) => (
+            <RoomCard image={image} key={i} />
           ))
         ) : (
           <CircularProgress
