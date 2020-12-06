@@ -1,5 +1,7 @@
 import React from "react";
-
+import facebook from "../../../assets/images/face.png";
+import tweet from "../../../assets/images/tweet.png"
+import insta from "../../../assets/images/insta.png"
 export default function Footer() {
   return (
     <div className="footer">
@@ -22,9 +24,9 @@ export default function Footer() {
         <div>Terms & Conditions</div>
       </section>
       <section className="find-us">
-          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}} src="/assets/face.png" alt=""/></div><div style={{marginLeft:"10px"}}>facebook</div></div>
-          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}}src="/assets/tweet.png" alt=""/></div><div style={{marginLeft:"10px"}}>twitter</div></div>
-          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}}src="/assets/insta.png" alt=""/></div><div style={{marginLeft:"10px"}}>instagram</div></div>
+          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}} src={facebook} alt=""/></div><div style={{marginLeft:"10px"}}>facebook</div></div>
+          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}}src={tweet} alt=""/></div><div style={{marginLeft:"10px"}}>twitter</div></div>
+          <div><div style={{width:"30px"}}><img style={{marginTop:"5px"}}src={insta} alt=""/></div><div style={{marginLeft:"10px"}}>instagram</div></div>
       </section>
       <section className="email-us">
           <div>Subscribe to our newsletter</div>
