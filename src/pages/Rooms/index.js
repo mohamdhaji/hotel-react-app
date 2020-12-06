@@ -31,7 +31,7 @@ export default function Rooms() {
     dispatch({ type: "loading" });
     unsplash
       .get("/search/photos", {
-        params: { query: "luxury rooms ", per_page: "3" },
+        params: { query: "rooms", per_page: "3" },
       })
       .then((response) => {
         const images=response.data.results;
@@ -82,7 +82,7 @@ export default function Rooms() {
       <section className="rooms-content">
       {state.images.length > 0 ? (
           state.images.map((image,i) => (
-            <RoomCard image={image} key={i} />
+            <RoomCard image={image} key={image.id} />
           ))
         ) : (
           <CircularProgress
