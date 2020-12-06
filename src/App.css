@@ -496,6 +496,8 @@
 .facility-card {
   margin-bottom: 90px;
   position: relative;
+  border: 2px solid #14274a;
+  border-radius: 6px;
 }
 
 .facility-card__image-name {
@@ -544,6 +546,8 @@
   position: relative;
   max-height: 900px;
   width: 100%;
+  border: 2px solid #14274a;
+  border-radius: 6px;
 }
 .room-card > img {
   max-height: 900px;

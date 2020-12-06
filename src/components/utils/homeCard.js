@@ -7,9 +7,21 @@ export default function HomeCard(props) {
         <div className="home-card__line"></div>
         <div className="home-card__title">{props.data.title}</div>
         <div className="home-card__text">{props.data.text}</div>
-        <FormField className="home-button" formData={{ element: "button" }} name="EXPLORE" />
+        <FormField
+          className="home-button"
+          formData={{ element: "button" }}
+          name="EXPLORE"
+        />
       </div>
-      <img style={{ width: "45%" }} src={props.data.url} alt=""></img>
+      <img
+        style={{
+          width: "45%",
+          border: "2px solid #14274a",
+          borderRadius: "6px",
+        }}
+        src={props.data.url}
+        alt=""
+      ></img>
     </div>
   );
 }
