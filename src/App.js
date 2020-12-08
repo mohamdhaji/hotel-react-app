@@ -3,7 +3,7 @@ import Routes from "./routes";
 import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hotel-react-app/">
       <Routes />
     </BrowserRouter>
   );
