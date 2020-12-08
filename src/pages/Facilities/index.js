@@ -23,7 +23,7 @@ function reducer(state, action) {
 
 export default function Facilities() {
   const [state, dispatch] = useReducer(reducer, initialState);
-
+  const facilitiesNames=["THE GYM","POOLSIDE BAR","THE SPA","SWIMMING POOL","RESTAURANT","LAUNDRY"]
   const myDivToScroll = useRef(null);
   useEffect(() => {
     dispatch({ type: "loading" });
@@ -66,8 +66,8 @@ export default function Facilities() {
 
       <section className="facilities-content">
         {state.images.length > 0 ? (
-          state.images.map((image) => (
-            <FacilityCard image={image} key={image.id} />
+          state.images.map((image,i) => (
+            <FacilityCard facilitiesName={facilitiesNames[i]} image={image} key={image.id} />
           ))
         ) : (
           <CircularProgress

@@ -1,12 +1,11 @@
-import React,  { useEffect, useReducer, useRef } from "react";
+import React, { useEffect, useReducer, useRef } from "react";
 import Feature from "../../components/featured";
 import unsplash from "../../api/unsplash";
-import RoomCard from "./roomCard"
+import RoomCard from "./roomCard";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Testimonial from "../../components/testimonial";
 
 import romes from "../../assets/images/Rooms.jpg";
-
 
 const initialState = { images: [], loading: false, errorMsg: "" };
 
@@ -25,7 +24,7 @@ function reducer(state, action) {
 
 export default function Rooms() {
   const [state, dispatch] = useReducer(reducer, initialState);
-
+  const romeNames = ["SINGLE ROOM", "DOUBLE ROOM", "TWIN ROOM"];
   const myDivToScroll = useRef(null);
   useEffect(() => {
     dispatch({ type: "loading" });
@@ -34,7 +33,7 @@ export default function Rooms() {
         params: { query: "rooms", per_page: "3" },
       })
       .then((response) => {
-        const images=response.data.results;
+        const images = response.data.results;
         // for slider later on
         // for(let i=0; i<res.length; i++){
         //   if( images[Math.floor(i%3)]){
@@ -80,9 +79,9 @@ export default function Rooms() {
         rooms’ sea-view windows and terraces.{" "}
       </div>
       <section className="rooms-content">
-      {state.images.length > 0 ? (
-          state.images.map((image,i) => (
-            <RoomCard image={image} key={image.id} />
+        {state.images.length > 0 ? (
+          state.images.map((image, i) => (
+            <RoomCard imgName={romeNames[i]} image={image} key={image.id} />
           ))
         ) : (
           <CircularProgress
@@ -91,10 +90,8 @@ export default function Rooms() {
             size="50px"
           />
         )}
-
       </section>
       <Testimonial reff={myDivToScroll} />
-
     </div>
   );
 }
