@@ -4,14 +4,16 @@ export default function HomeCard(props) {
   return (
     <div className="home-card">
       <div className="home-card__content">
-        <div className="home-card__line"></div>
-        <div className="home-card__title">{props.data.title}</div>
-        <div className="home-card__text">{props.data.text}</div>
-        <FormField
-          className="home-button"
-          formData={{ element: "button" }}
-          name="EXPLORE"
-        />
+        {/* <div className="home-card__line"></div> */}
+        <div style={{ borderLeft: "1px solid black", paddingLeft: "20px" }}>
+          <div className="home-card__title">{props.data.title}</div>
+          <div className="home-card__text">{props.data.text}</div>
+          <FormField
+            className="home-button"
+            formData={{ element: "button" }}
+            name="EXPLORE"
+          />
+        </div>
       </div>
       <img
         style={{

@@ -423,7 +423,7 @@
   width: 60%;
   margin: auto;
   color: #14274a;
-  margin-bottom: 50px;
+  margin-bottom: 95px;
 }
 
 .testimonial-title {
@@ -553,7 +553,7 @@
   height: 750px;
   width: 100%;
 }
-.slider{
+.slider {
   max-height: 750px;
   min-height: 750px;
   height: 750px;
@@ -617,4 +617,15 @@
 }
 .room-card__footer-left__button {
   margin-right: 80px;
+}
+
+/* shape */
+#triangle-up {
+  position: absolute;
+  top: -35px;
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 35px solid #14274a;
 }

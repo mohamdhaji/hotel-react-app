@@ -5,6 +5,7 @@ import insta from "../../../assets/images/insta.png"
 export default function Footer() {
   return (
     <div className="footer">
+    <div id="triangle-up"/>
       <section className="contact-info">
         <div className="logo--v2">
           <div className="pri-text--v2">
