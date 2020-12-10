@@ -30,7 +30,7 @@ export default function Rooms() {
     dispatch({ type: "loading" });
     unsplash
       .get("/search/photos", {
-        params: { query: "rooms", per_page: "3" },
+        params: { query: "room", per_page: "3" },
       })
       .then((response) => {
         const images = response.data.results;
