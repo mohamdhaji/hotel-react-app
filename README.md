@@ -5,5 +5,5 @@ This project is just for applying and practicing React Router, useReduce hook in
 
 ## DEMO : [https://mohamdhaji.github.io/hotel-react-app/](https://mohamdhaji.github.io/hotel-react-app/)
 
-## Figma link [https://www.figma.com/file/QXP1lA4DzMa6hsfD7slKS4/Hotel-Website-Design-(Community)?node-id=0%3A1](https://www.figma.com/file/QXP1lA4DzMa6hsfD7slKS4/Hotel-Website-Design-(Community)?node-id=0%3A1)
+## Figma link : [https://www.figma.com/file/QXP1lA4DzMa6hsfD7slKS4/Hotel-Website-Design-(Community)?node-id=0%3A1](https://www.figma.com/file/QXP1lA4DzMa6hsfD7slKS4/Hotel-Website-Design-(Community)?node-id=0%3A1)
 
